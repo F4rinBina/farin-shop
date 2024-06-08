@@ -19,7 +19,7 @@ function Navbar() {
                     </nav>
                     <div>
                         <ul>
-                            <li>Cart:<b>{cartQty}</b></li>
+                            <li><Link to="/cart">Cart:<b>{cartQty}</b></Link></li>
                         </ul>
                     </div>
                 </div>

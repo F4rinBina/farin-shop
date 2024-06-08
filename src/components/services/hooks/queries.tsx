@@ -27,7 +27,7 @@ export const useGetProduct = ({ id }: { id: string }) => {
 
 
 
-
+   
 
 
 

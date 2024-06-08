@@ -1,12 +1,11 @@
-import Container from "../../components/container/Container";
-import Login from "../login/Login";
+import SideBar from "../../components/sideBar/SideBar"
 
 
 function Home() {
   return (
-    <Container>
-      <Login />
-    </Container>
+    <div>
+      <SideBar/>
+    </div>
   )
 }
 

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import Container from "../../components/container/Container"
 import { useGetProduct } from "../../components/services/hooks/queries"
 import { useShoppingCartContext } from "../../components/context/Context"
+import SideBar from "../../components/sideBar/SideBar"
 
 
 function Product() {
@@ -16,7 +17,9 @@ function Product() {
 console.log(cartItems);
 
     return (
-        <Container>
+        <div>
+            <SideBar/>
+                <Container>
             <div className="grid grid-cols-12 shadow-md  mt-6 p-4">
                 <div className=" col-span-10 ">
                     <h3 className="font-bold mb-4">{data?.title}</h3>
@@ -38,6 +41,8 @@ console.log(cartItems);
 
             </div>
         </Container>
+        </div>
+    
     )
 }
 
